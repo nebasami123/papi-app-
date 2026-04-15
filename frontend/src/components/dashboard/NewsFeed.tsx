@@ -19,7 +19,7 @@ export function NewsFeed() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/news")
+    fetch("/api/news")
       .then(res => res.json())
       .then(data => {
         setNews(data.news)

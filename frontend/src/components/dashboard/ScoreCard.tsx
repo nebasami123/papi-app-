@@ -16,7 +16,7 @@ export function ScoreCard() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/scorecard")
+    fetch("/api/scorecard")
       .then(res => res.json())
       .then(data => {
         setCurrencies(data.currencies)

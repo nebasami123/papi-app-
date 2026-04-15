@@ -21,7 +21,7 @@ export function EconomicCalendar() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/calendar")
+    fetch("/api/calendar")
       .then(res => res.json())
       .then(data => {
         setEvents(data.events)

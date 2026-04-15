@@ -19,7 +19,7 @@ export function CotChart() {
   const [selectedCur, setSelectedCur] = useState("USD")
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/cot")
+    fetch("/api/cot")
       .then(res => res.json())
       .then(resData => {
         setData(resData.cot)

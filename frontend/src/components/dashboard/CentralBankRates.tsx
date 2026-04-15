@@ -17,7 +17,7 @@ export function CentralBankRates() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/central-banks")
+    fetch("/api/central-banks")
       .then(res => res.json())
       .then(data => {
         setRates(data.rates)
