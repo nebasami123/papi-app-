@@ -3,7 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from apscheduler.schedulers.background import BackgroundScheduler
-from fetchers import fetch_and_store_news, fetch_cot_from_supabase
+from fetchers import fetch_and_store_news
 import database as db
 import logging
 from notifications import dispatch_discord_alert
